@@ -8,8 +8,8 @@ sns.set(style='dark')
 # Load Dataset
 @st.cache_data
 def load_data():
-    df_day = pd.read_csv("day_cleandata.csv")
-    df_hour = pd.read_csv("hour_cleandata.csv")
+    df_day = pd.read_csv("dashboard/day_cleandata.csv")
+    df_hour = pd.read_csv("dashboard/hour_cleandata.csv")
     return df_day, df_hour
 
 df_day, df_hour = load_data()
